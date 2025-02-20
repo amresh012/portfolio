@@ -1,5 +1,4 @@
-import { Avatar, Badge } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { FiSidebar } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { GoStack } from "react-icons/go";
@@ -19,21 +18,25 @@ const menu = [
     id: 0,
     name: "Home",
     icon: <TbSmartHome size={20} />,
+    link: "/",
   },
   {
     id: 1,
     name: "Project",
     icon: <BsFolder size={20} />,
+    link: "/projects",
   },
   {
     id: 2,
     name: "Blogs",
     icon: <RiBloggerLine size={20} />,
+    link: "/blogs",
   },
   {
     id: 2,
     name: "Extras",
     icon: <GoStack size={20} />,
+    link: "/extras",
   },
 ];
 
@@ -81,17 +84,20 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`flex flex-col relative justify-between  ${
-        isOpen ? "w-[15rem]" : "w-20"
+      className={`flex flex-col relative  justify-between  h-full  ${
+        isOpen ? "w-[20rem]" : "w-20"
       } h-screen bg-gray-100 py-4  transition-width duration-300 border-r`}
     >
       <div className="">
         <div className="parent flex items-center justify-around gap-2 ">
           {isOpen ? (
             <div className="flex items-center justify-evenly gap-2 hover:bg-gray-200 p-2 rounded-lg">
-              <div className="flex items-center justify-center bg-gray-200 roundedl-lg w-full p-3 rounded-lg">
-                <img src="/public/letter-a.png" alt="" className="w-6" />
-                <img src="/public/letter-m.png" alt="" className="w-6" />
+              <div className="flex items-center justify-center object-fit roundedl-lg w-full p-2 rounded-lg">
+                <img
+                  src="/public/ProfilePic.jpg"
+                  alt=""
+                  className="rounded-lg"
+                />
               </div>
               <div className="">
                 <h1 className="text-lg font-bold">Amresh Mishra</h1>
@@ -103,8 +109,11 @@ const Sidebar = () => {
           ) : (
             <div className="flex items-center justify-center w-full">
               <div className="flex items-center justify-center hover:bg-gray-200 roundedl-lg w-full p-3">
-                <img src="/public/letter-a.png" alt="" className="w-6" />
-                <img src="/public/letter-m.png" alt="" className="w-6" />
+                <img
+                  src="/public/ProfilePic.jpg"
+                  alt=""
+                  className="rounded-lg "
+                />
               </div>
             </div>
           )}
@@ -122,7 +131,7 @@ const Sidebar = () => {
             <h1 className="py-3 px-2 text-gray-700 font-medium">Menu</h1>
             {menu.map((item) => (
               <Link
-                to={item.url}
+                to={item.link}
                 key={item.id}
                 className={
                   location.pathname === item.url
@@ -142,7 +151,7 @@ const Sidebar = () => {
             <h1 className="py-3 px-2 text-gray-700 font-medium">Menu</h1>
             {menu.map((item) => (
               <Link
-                to={item.url}
+                to={item.link}
                 key={item.id}
                 className={
                   location.pathname === item.url
