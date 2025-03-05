@@ -15,8 +15,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="p-10 w-full flex flex-col  " data-aos="zoom-in">
-      <div className="w-full h-full p-10">
+    <div className="p-10 w-full flex flex-col" data-aos="zoom-in">
+      <div className="w-full h-full p-10 ">
         <div className="flex flex-col  justify-center p-6 gap-6 max-w-[70vw] ">
           <div className="flex items-center">
             <div className="rounded-lg overflow-clip p-2">
@@ -62,7 +62,7 @@ const Home = () => {
       </div>
       {/* work experiance */}
       <div className="w-full h-full p-10 ">
-        <div className="w-full h-full space-y-8 p-10 ">
+        <div className="w-full h-full space-y-4 p-10 ">
           <div className="font-bold text-3xl capitalize ">
             <h1>Work Experiance</h1>
           </div>
@@ -71,6 +71,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* project */}
+      <div className="">
+
+      </div>
+      
     </div>
   );
 }

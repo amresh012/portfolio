@@ -1,8 +1,6 @@
-import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa6";
@@ -32,8 +30,7 @@ export default function AccordionUsage({ props }) {
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+           {item.description}
           </AccordionDetails>
         </Accordion>
       ))}

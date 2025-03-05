@@ -4,7 +4,15 @@ export const experiance = [
     company: "Deepnap Softech",
     position: "Full Stack Developer",
     duration: "Feb 2024 - Present ·  ",
-    description: "",
+    description: `• Developed scalable, dynamic, and highly optimized e-commerce platforms using the MERN stack
+• Implemented features like user authentication, product catalog, advanced filtering, cart management, payment
+gateways(Razorpay), and live order tracking system(Shiprocket)
+• Designed a central notification system to improve user engagement. Integrated AI tools for generating product
+descriptions and other content
+• Reduced server response times by 30% through code refactoring and query optimization. Championed Agile
+methodologies by coordinating with development, design, and QA teams, achieving an 85% on-time project
+completion rate and reducing post-release defects by 25%
+• Technologies Used: React, Node.js, Express.js, MongoDB, Dialogflow, Git/Github`,
     location: "Faridabad , Harayana",
   },
   {
@@ -12,7 +20,14 @@ export const experiance = [
     company: "Zidio Development",
     position: "Web Developer",
     duration: "Sep 2023 - Feb 2024 · 6 mos",
-    description: "",
+    description: `• Designed and implemented a real-time feedback system using React and Node.js, enhancing data handling and
+user experience.
+• Created an intelligent chatbot with Dialogflow, integrating it into the website and mobile app, reducing customer
+service response times by 20%.
+• Enhanced database management by implementing MongoDB to store and manage feedback data, reducing
+retrieval time by 40% and increasing accuracy by 25%, thereby improving overall operational efficiency.
+• Technologies Used: React, Node.js, Express.js, MongoDB, Dialogflow, Git/Github
+`,
     location: "Remote",
   },
   {
@@ -20,7 +35,29 @@ export const experiance = [
     company: "Settlin - Linking Spaces Technologies Pvt. Ltd.",
     position: "Software Developer Intern | Full Stack",
     duration: "Apr 2023 - Sep 2023 · 6 mos",
-    description: "",
+    description: `• Independently developed and maintained over 6 features, ensuring end-to-end functionality from front-end to
+backend.
+• optimized aggregation queries that enhanced database efficiency by 2% and implemented multiple UI changes that improved
+user interface engagement by 10%
+• Actively maintained communication with cross-functional teams, resolving 15+ issues, and contributed to
+front-end unit testing, improving test coverage by 50% to ensure robust code quality`,
     location: "Remote",
   },
 ];
+
+
+export const projects = [
+  {
+    id:0,
+    thumbnail:"/public/Macbook-Air-elevate-hq-clone-git-main-amresh012s-projects.vercel.app.png",
+    title:"Elevate HQ Clone",
+    description:"Elevate HQ Clone is a clone of the Elevate HQ website. It is a platform that helps you to find the best coworking spaces in your city. It is built using React, TailwindCSS, and Firebase.",
+    tech:["React","Git/Github","TailwindCSS"],
+    link:"https://elevate-hq-clone-git-main-amresh012s-projects.vercel.app/",
+    gallery:["/public/Macbook-Air-elevate-hq-clone-git-main-amresh012s-projects.vercel.app.png"],
+    video:"",
+    type:"Full-Stack",
+    source:"https://github.com/amresh012/ElevateHQ-Clone",
+    learn:`/projects/0`
+  }
+]

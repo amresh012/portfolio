@@ -12,6 +12,7 @@ import { TbBrandLeetcode } from "react-icons/tb";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
+import { Divider } from '@mui/material';
 
 const menu = [
   {
@@ -91,17 +92,17 @@ const Sidebar = () => {
       <div className="">
         <div className="parent flex items-center justify-around gap-2 ">
           {isOpen ? (
-            <div className="flex items-center justify-evenly gap-2 hover:bg-gray-200 p-2 rounded-lg">
-              <div className="flex items-center justify-center object-fit roundedl-lg w-full p-2 rounded-lg">
+            <div className="flex items-center justify-evenly  p-2 rounded-lg">
+              <div className="flex items-center justify-center object-fit roundedl-lg w-full rounded-lg">
                 <img
                   src="/public/ProfilePic.jpg"
                   alt=""
-                  className="rounded-lg"
+                  className="rounded-lg w-[50%]"
                 />
               </div>
               <div className="">
                 <h1 className="text-lg font-bold">Amresh Mishra</h1>
-                <p className="text-[11px] break-words">
+                <p className="text-[14px] break-words">
                   amreshmishra67099@gmail.com
                 </p>
               </div>
@@ -119,12 +120,12 @@ const Sidebar = () => {
           )}
           <button
             onClick={toggleSidebar}
-            className=" -right-8 transition-colors duration-300 absolute top-4  rounded-full "
+            className=" -right-8 transition-colors duration-300 absolute top-4 z-50  rounded-full "
           >
             <FiSidebar />
           </button>
         </div>
-
+<Divider/>
         {/*  */}
         {isOpen ? (
           <ul className="mt-4 space-y-2 p-2">
@@ -168,6 +169,8 @@ const Sidebar = () => {
           </div>
         )}
       </div>
+<Divider/>
+
       <div className="">
         <h1 className="py-6 px-2 text-gray-700 font-medium">Social</h1>
         <ul className=" flex flex-col gap-6 px-4 py-2">
