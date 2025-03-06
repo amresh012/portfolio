@@ -13,24 +13,21 @@ const Card = ({props}) => {
         description,
         tech,
         link,
-        gallery,
-        video,
-        type,
-        learn,
         source
-
 
      } = props;
         console.log(props)
     return (
         <div className="card rounded-lg w-full flex flex-col justify-between border p-4">
+            <Link to={`/project/${id}`} className="flex justify-end">
            <div className="  object-cover bg-cover bg-center">
-           <img src={props.thumbnail} alt={title} className="card-image " />
+           <img src={thumbnail} alt={title} className="card-image " />
            </div>
+         </Link>
             <div className="flex flex-col justify-between">
             <div className="card-content w-full p-2">
-                <h2 className="card-title text-xl font-bold">{title}</h2>
-                <p className="card-description">{description}</p>
+                <h2 className="card-title text-xl font-bold capitalize">{title}</h2>
+                <p className="card-description capitalize">{description}</p>
                 <p>
                     <span className="font-bold">Tech:</span> {tech.map((item, i) => (
                         <span key={i}>{item}{i !== tech.length - 1 && ', '}</span>

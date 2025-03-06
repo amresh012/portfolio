@@ -4,6 +4,9 @@ import { useState } from "react"
 import { IoFunnelOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5"
 import { projects } from "../Constants";
+
+
+
 const Project = () => {
   const [search, setSearch] = useState('')
 
@@ -15,11 +18,11 @@ const Project = () => {
   });
   return (
     <>
-  <main className='border w-full p-10'>
+  <main className=' w-full p-10'>
     <div className="p-4">
      <div className="w-full flex justify-between "> 
       <h1 className='text-4xl font-bold'>Recent Works  & Projects</h1>
-      <div className="bg-gray-200 items-center justify-center flex border border-gray-700 p-2 rounded-lg">
+      <div className="bg-gray-200 items-center justify-center flex  p-2 rounded-lg">
         <input
          type="search"
          value={search}
@@ -38,7 +41,7 @@ const Project = () => {
           <IoFunnelOutline/>
         </div>
         {
-          ["All","Frontend","Backend","Full-Stack","UI","Mobile App"].map((item,i)=>(
+          ["All","Frontend","Backend","Full-Stack","UI","Mobile App","Desktop app"].map((item,i)=>(
             <div  onClick={() => setSelectedFilter(item)} className="bg-gray-200 hover:bg-indigo-200 cursor-pointer duration-300 hover:border-b-2 hover:border-indigo-600 hover:text-indigo-700 rounded-md capitalize " key={i}>
               <li className="p-2 text-xs">{item}</li>
             </div>

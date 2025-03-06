@@ -5,10 +5,12 @@ const Layout = () => {
   return (
     <>
     <div className="flex w-full ">
-     <div className="">
+     <div className="fixed h-screen ">
      <Sidebar />
      </div>
-     <Outlet/>
+     <div className="ml-[20rem] ">
+      <Outlet/>
+     </div>
     </div>
     </>
   );

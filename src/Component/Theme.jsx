@@ -27,7 +27,7 @@ const Theme = () => {
   return (
     <div className="absolute right-6 top-2 z-50 w-fit">
       <Chip
-        label="Theme"
+        label={theme === 'light' ? 'Light' : 'Dark'}
         icon={theme === 'light' ? <FaSun /> : <FaMoon />}
         onClick={toggleTheme}
       />
